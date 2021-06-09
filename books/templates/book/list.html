@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load bootstrap_pagination %}
+
+{% block title %}{{ view_title }}{% endblock %}
+
+{% block content %}
+<div class="row mt-3 mb-3 bg-warning p-3">
+    <div class="col-sm-12">
+        <h2 class="text-center">{{ view_head }}</h2>
+    </div>
+</div>
+<div class="row">
+    {% for book in book_list %}
+    <div class="col-sm-4 col-xl-2">
+        <div class="card">
+            {% if book.poster %}
+            <img class="card-img-top" src="{{ book.poster.url }}" alt="{{ book.title }}">
+            {% endif %}
+            <div class="card-body">
+                <h4 class="card-title">{{ book.title }}</h4>
+                <p class="card-text"><strong>Žánry:</strong> 
+                {% for genre in book.genres.all %}{{ genre.name }}{% endfor %}
+                </p>
+                <p><strong>Hodnocení:</strong> {{ book.rate }}</p>
+                <a href="{% url 'book-detail' book.pk %}" class="btn btn-primary">Podrobnosti</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        Celkový počet knih: {{ num_books }}
+    </div>
+</div>
+
+{% if num_books > 0 %}
+<div class="row">
+    <div class="col-sm-12">
+        {% bootstrap_paginate page_obj range=10 %}
+    </div>
+</div>
+<div>
+    <a href="{% url 'book-create' %}" class="btn btn-success">Nová kniha</a>
+</div>
+{% endif %}
+
+{% endblock %}
