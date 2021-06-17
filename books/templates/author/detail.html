@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Detail autora{% endblock %}
+{% load static %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'lightbox/css/lightbox.min.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="row mb-3">
+    <div class="col-sm-12 bg-warning">
+        <h2 class="display-4 text-center">Podrobné informace</h2>
+    </div>
+</div>
+<div class="row mt-5 mb-3">
+    <div class="col-lg-6 mb-3">
+        <h2 class="display-4 mb-3">{{ author_detail.name }}</h2>
+        <div class="bg-secondary text-light p-2 mb-3">
+            {{ author_detail.birth_date }}
+        </div>
+        <div class="row">
+            <div class="col-md-9">{{ author_detail.description }}</div>
+        </div>
+    </div>
+</div>
+<div>
+    <a href="{% url 'author-update' author_detail.pk %}" class="btn btn-primary">Editovat</a>
+    <a href="{% url 'author-delete' author_detail.pk %}" class="btn btn-danger">Smazat</a>
+</div>
+{% endblock %}
+
+{% block scripts %}
+    <script src="{% static 'lightbox/js/lightbox.min.js' %}"></script>
+    <script>
+      lightbox.option({
+          'resizeDuration': 200,
+          'wrapAround': true
+      })
+    </script>
+{% endblock %}

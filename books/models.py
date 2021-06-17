@@ -3,11 +3,42 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 from django.urls import reverse
 from django.utils.html import format_html
 
+
 def attachment_path(instance, filename):
     return "book/" + str(instance.book.id) + "/attachments/" + filename
 
+
 def poster_path(instance, filename):
     return "book/" + str(instance.id) + "/poster/" + filename
+
+
+class Author(models.Model):
+    name = models.CharField(max_length=50, unique=True, verbose_name="Name",
+                            help_text='Enter a name of the author')
+    birth_date = models.DateField(help_text="Please use the following format: <em>YYYY-MM-DD</em>.",
+                                  verbose_name="Date of birth")
+    description = models.TextField(blank=True, null=True, verbose_name="Description")
+
+    class Meta:
+        ordering = ["name"]
+
+    def __str__(self):
+        return self.name
+
+    def book_count(self, obj):
+        return obj.book_set.count()
+
+
+class Type(models.Model):
+    name = models.CharField(max_length=50, unique=True, verbose_name="Type name",
+                            help_text='Enter a book type (e.g. epika, lyrika, drama)')
+
+    class Meta:
+        ordering = ["name"]
+
+    def __str__(self):
+        return self.name
+
 
 
 class Genre(models.Model):
@@ -26,12 +57,13 @@ class Genre(models.Model):
 
 class Book(models.Model):
     title = models.CharField(max_length=200, verbose_name="Title")
+    author = models.ForeignKey(Author, on_delete=models.CASCADE)
     plot = models.TextField(blank=True, null=True, verbose_name="Plot")
     release_date = models.DateField(blank=True, null=True,
                                     help_text="Please use the following format: <em>YYYY-MM-DD</em>.",
                                     verbose_name="Release date")
-    runtime = models.IntegerField(blank=True, null=True,
-                                  help_text="Please enter an integer value (minutes)",
+    pages = models.IntegerField(blank=True, null=True,
+                                  help_text="Please enter an integer value (number of pages)",
                                   verbose_name="Pages")
     rate = models.FloatField(default=5.0,
                              validators=[MinValueValidator(1.0), MaxValueValidator(10.0)],
@@ -40,6 +72,7 @@ class Book(models.Model):
                              verbose_name="Rate")
     poster = models.ImageField(upload_to=poster_path, blank=True, null=True, verbose_name="Poster")
     genres = models.ManyToManyField(Genre, help_text='Select a genre for this book')
+    types = models.ManyToManyField(Type, help_text='Select a type of this book')
 
     class Meta:
         ordering = ["-release_date", "title"]
@@ -71,7 +104,8 @@ class Attachment(models.Model):
         ('other', 'Other'),
     )
 
-    type = models.CharField(max_length=5, choices=TYPE_OF_ATTACHMENT, blank=True, default='image', help_text='Select allowed attachment type', verbose_name="Attachment type")
+    type = models.CharField(max_length=5, choices=TYPE_OF_ATTACHMENT, blank=True, default='image',
+                            help_text='Select allowed attachment type', verbose_name="Attachment type")
     book = models.ForeignKey('Book', on_delete=models.CASCADE)
 
     class Meta:

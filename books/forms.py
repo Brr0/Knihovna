@@ -2,7 +2,7 @@ from django import forms
 from django.core.exceptions import ValidationError
 from django.forms import ModelForm
 
-from .models import Genre, Book
+from .models import Genre, Book, Author
 
 
 class BookModelForm(ModelForm):
@@ -20,8 +20,14 @@ class BookModelForm(ModelForm):
 
     class Meta:
         model = Book
-        fields = ['title', 'plot', 'poster', 'genres', 'release_date', 'runtime', 'rate']
+        fields = ['title', 'author', 'plot', 'release_date', 'pages', 'rate', 'poster', 'genres', 'types']
         labels = {'title': 'Název knihy', 'plot': 'Stručný děj'}
+
+
+class AuthorModelForm(ModelForm):
+    class Meta:
+        model = Author
+        fields = ['name', 'birth_date', 'description']
 
 """
 class FilmForm(forms.Form):

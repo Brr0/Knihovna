@@ -24,9 +24,18 @@ class GenreAdmin(admin.ModelAdmin):
     book_count.short_description = "Počet knih"
 
 
+@admin.register(Type)
+class TypeAdmin(admin.ModelAdmin):
+    list_display = ["name"]
+
+
+@admin.register(Author)
+class AuthorAdmin(admin.ModelAdmin):
+    list_display = ("name", "birth_date")
+
 @admin.register(Book)
 class BookAdmin(admin.ModelAdmin):
-    list_display = ("title", "release_year", "rate_percent", "runtime_min")
+    list_display = ("title", "release_year", "rate_percent", "pages_min")
 
     def release_year(self, obj):
         return obj.release_date.year
@@ -34,12 +43,12 @@ class BookAdmin(admin.ModelAdmin):
     def rate_percent(self, obj):
         return format_html("<b>{} %</b>", int(obj.rate * 10))
 
-    def runtime_min(self, obj):
-        return format_html("<mark>{} </mark>", obj.runtime)
+    def pages_min(self, obj):
+        return format_html("<mark>{} </mark>", obj.pages)
 
     rate_percent.short_description = "Hodnocení knihy"
     release_year.short_description = "Rok uvedení"
-    runtime_min.short_description = "Počet stran"
+    pages_min.short_description = "Počet stran"
 
 
 @admin.register(Attachment)
@@ -48,3 +57,6 @@ class AttachmentAdmin(admin.ModelAdmin):
 
     def book_title(self, obj):
         return obj.book.title
+
+
+

@@ -18,8 +18,9 @@
             {% endif %}
             <div class="card-body">
                 <h4 class="card-title">{{ book.title }}</h4>
+                <p><strong>Autor:</strong> {{ book.author }}</p>
                 <p class="card-text"><strong>Žánry:</strong> 
-                {% for genre in book.genres.all %}{{ genre.name }}{% endfor %}
+                {% for genre in book.genres.all %}{{ genre.name }} {% endfor %}
                 </p>
                 <p><strong>Hodnocení:</strong> {{ book.rate }}</p>
                 <a href="{% url 'book-detail' book.pk %}" class="btn btn-primary">Podrobnosti</a>
