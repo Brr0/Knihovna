@@ -19,66 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2e8820f-f569-4f8f-988d-2326222c66c7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/mfd.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mfd.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filmweb/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filmweb/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/libraryapp/asgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filmweb/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/libraryapp/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filmweb/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/libraryapp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filmweb/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/libraryapp/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/film/1/attachments/pulp-fiction-01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/film/1/attachments/pulp-fiction-03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/film/1/poster/pulp-fiction.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/film/2/poster/vetrelec.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/film/3/poster/color2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/context_processors.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/context_processors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/migrations/0002_auto_20210318_1059.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/migrations/0003_auto_20210429_1030.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/libraryapp/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/books/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/static/lightbox/css/lightbox.css" beforeDir="false" afterPath="$PROJECT_DIR$/books/static/lightbox/css/lightbox.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/static/lightbox/css/lightbox.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/books/static/lightbox/css/lightbox.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/static/lightbox/images/close.png" beforeDir="false" afterPath="$PROJECT_DIR$/books/static/lightbox/images/close.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/static/lightbox/images/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/books/static/lightbox/images/loading.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/static/lightbox/images/next.png" beforeDir="false" afterPath="$PROJECT_DIR$/books/static/lightbox/images/next.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/static/lightbox/images/prev.png" beforeDir="false" afterPath="$PROJECT_DIR$/books/static/lightbox/images/prev.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/static/lightbox/js/lightbox-plus-jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/books/static/lightbox/js/lightbox-plus-jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/static/lightbox/js/lightbox-plus-jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/books/static/lightbox/js/lightbox-plus-jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/static/lightbox/js/lightbox-plus-jquery.min.map" beforeDir="false" afterPath="$PROJECT_DIR$/books/static/lightbox/js/lightbox-plus-jquery.min.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/static/lightbox/js/lightbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/books/static/lightbox/js/lightbox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/static/lightbox/js/lightbox.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/books/static/lightbox/js/lightbox.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/static/lightbox/js/lightbox.min.map" beforeDir="false" afterPath="$PROJECT_DIR$/books/static/lightbox/js/lightbox.min.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/templates/admin/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/admin/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/templates/admin/base_site.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/admin/base_site.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/templates/blocks/genre_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/blocks/genre_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/templates/blocks/new_films.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/blocks/new_books.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/templates/blocks/top_ten.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/blocks/top_ten.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/templates/film/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/book/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/templates/film/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/book/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/templates/movies/film_bootstrap_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/books/book_bootstrap_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/templates/movies/film_confirm_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/books/book_confirm_delete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/templates/movies/film_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/books/book_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/templates/page/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/page/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/templates/page/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/page/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/templates/page/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/page/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/templates/topten.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/topten.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="c2e8820f-f569-4f8f-988d-2326222c66c7" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,7 +38,9 @@
   </component>
   <component name="JupyterTrust" id="858f0b27-bec7-455b-9e8d-5034222d8e62" />
   <component name="ProjectId" id="1oy6D0LBxYhWvVarqC1o4GqmY7C" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -108,7 +51,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/manage.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -210,9 +153,9 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.runserver" />
-      <item itemvalue="Python.migrate" />
       <item itemvalue="Python.makemigrations" />
+      <item itemvalue="Python.migrate" />
+      <item itemvalue="Python.runserver" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -248,45 +191,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="414" y="174" width="1092" height="787" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1623266285173">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="414" y="174" width="1092" height="787" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1623266285173" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1623260373933">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1623260373933" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1623268239764">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1623268239764" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1623268239764">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1623268239764" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1623268239764">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1623268239764" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1623268239764">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1623268239764" />
-    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1623266226826">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1623266226826" />
-    <state x="2272" y="77" key="SettingsEditor" timestamp="1621500408645">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2272" y="77" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1621500408645" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/mfd_sitari$manage.coverage" NAME="manage Coverage Results" MODIFIED="1623257260331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/mfd_sitari$runserver.coverage" NAME="runserver Coverage Results" MODIFIED="1623268239758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/mfd_sitari$makemigrations.coverage" NAME="makemigrations Coverage Results" MODIFIED="1623266909948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/mfd_sitari$migrate.coverage" NAME="migrate Coverage Results" MODIFIED="1623266913350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
