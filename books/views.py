@@ -57,7 +57,7 @@ def topten(request):
 
 class BookCreateView(CreateView):
     model = Book
-    fields = ['title', 'plot', 'poster', 'genres', 'release_date', 'pages', 'rate']
+    fields = ['title','author', 'plot', 'poster', 'genres', 'release_date', 'pages', 'rate']
 
 
 class BookUpdateView(UpdateView):
@@ -117,7 +117,9 @@ class AuthorDetailView(DetailView):
 
 class AuthorCreateView(CreateView):
     model = Author
-    fields = ['name', 'birth_date', 'description']
+    template_name = 'authors/author_form.html'
+    fields = ['name', 'birth_date','photo', 'description']
+    success_url = reverse_lazy('author_list')
 
 
 class AuthorUpdateView(UpdateView):

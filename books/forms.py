@@ -24,6 +24,7 @@ class BookModelForm(ModelForm):
         labels = {'title': 'Název knihy', 'plot': 'Stručný děj'}
 
 
+
 class AuthorModelForm(ModelForm):
     class Meta:
         model = Author
