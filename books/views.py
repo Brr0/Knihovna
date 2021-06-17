@@ -104,6 +104,16 @@ class AuthorDetailView(DetailView):
     context_object_name = 'author_detail'
     template_name = 'author/detail.html'
 
+    #def get_queryset(self):
+        #return Book.objects.filter(author=self.kwargs['pk']).order_by('-rate')
+
+    def get_context_data(self, **kwargs):
+        # Call the base implementation first to get a context
+        context = super().get_context_data(**kwargs)
+        # Add in a QuerySet of all the books
+        context['best_books'] = Book.objects.filter(author=self.kwargs['pk']).order_by('-rate')
+        return context
+
 
 class AuthorCreateView(CreateView):
     model = Author
@@ -114,6 +124,10 @@ class AuthorUpdateView(UpdateView):
     model = Author
     template_name = 'authors/author_bootstrap_form.html'
     form_class = AuthorModelForm
+
+    def get_success_url(self):
+        pk = self.kwargs["pk"]
+        return reverse("author-detail", kwargs={"pk": pk})
 
 
 class AuthorDeleteView(DeleteView):

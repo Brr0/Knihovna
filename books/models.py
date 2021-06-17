@@ -12,11 +12,16 @@ def poster_path(instance, filename):
     return "book/" + str(instance.id) + "/poster/" + filename
 
 
+def author_path(instance, filename):
+    return "author/" + str(instance.id) + "/photo/" + filename
+
+
 class Author(models.Model):
     name = models.CharField(max_length=50, unique=True, verbose_name="Name",
                             help_text='Enter a name of the author')
     birth_date = models.DateField(help_text="Please use the following format: <em>YYYY-MM-DD</em>.",
                                   verbose_name="Date of birth")
+    photo = models.ImageField(upload_to=poster_path, verbose_name="Photo")
     description = models.TextField(blank=True, null=True, verbose_name="Description")
 
     class Meta:

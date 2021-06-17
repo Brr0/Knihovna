@@ -27,7 +27,7 @@ class BookModelForm(ModelForm):
 class AuthorModelForm(ModelForm):
     class Meta:
         model = Author
-        fields = ['name', 'birth_date', 'description']
+        fields = ['name', 'birth_date', 'description', 'photo']
 
 """
 class FilmForm(forms.Form):

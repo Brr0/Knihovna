@@ -17,9 +17,17 @@
         <div class="bg-secondary text-light p-2 mb-3">
             {{ author_detail.birth_date }}
         </div>
-        <div class="row">
-            <div class="col-md-9">{{ author_detail.description }}</div>
-        </div>
+        <img src="{{ author_detail.photo.url }}" class="w-25 img-fluid" alt="Obrázek autora">
+        </a>
+        <div class="col-md-9">{{ author_detail.description }}</div>
+    </div>
+    <div class="col-lg-3 bg-light p-3">
+        <h3 class="border-bottom pb-3 text-secondary text-center text-uppercase">Nejlepší tvorba</h3>
+        <ul class="list-group">
+            {% for book in best_books %}
+            <li class="list-group-item list-group-item-info"><a class="text-dark" href="{% url 'book-detail' book.pk %}"><span class="badge bg-success">{{ book.rate }}</span>  {{ book.title }}</a></li>
+            {% endfor %}
+        </ul>
     </div>
 </div>
 <div>
